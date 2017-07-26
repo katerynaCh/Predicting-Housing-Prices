@@ -14,6 +14,7 @@ train.csv - the training set
 <br>test.csv - the test set
 <br>data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
 <br>sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
+<br>prediction.ipynb - final notebook with my solution
 <h3>My approach:</h3>
 
 <br>1. Remove features irrelevant from the first sight, or the ones having a lot of similar/missing values
