@@ -15,9 +15,9 @@ train.csv - the training set
 <br>data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
 <br>sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
 <h3>My approach:</h3>
-<list>
-1. Remove features irrelevant from the first sight, or the ones having a lot of similar/missing values
-2. Generate new features:
+
+<br>1. Remove features irrelevant from the first sight, or the ones having a lot of similar/missing values
+<br>2. Generate new features:
 - Remodelled
 - YearSinceRemodelled
 - Age
@@ -34,14 +34,15 @@ train.csv - the training set
 - Features identifying 'Good QUality' of some facility
 - Features identifying poor quality of some facility
 - linear transfomations of the highly-correlated features
-3. Missing data imputation is handled meaningfully, each feature is treated separately (check notebook)
-4. Transform numeric to categoric and sometimes vice versa
-4. Analyze features for correlations and remove unrelevant again
-5. Find outliers statistically and remove them
-6. More feature engineering
-7. Unskewing data
-8. Models: catboost worked the best. 
-</list>
+
+<br>3. Missing data imputation is handled meaningfully, each feature is treated separately (check notebook)
+<br>4. Transform numeric to categoric and sometimes vice versa
+<br>5. Analyze features for correlations and remove unrelevant again
+<br>6. Find outliers statistically and remove them
+<br>7. More feature engineering
+<br>8. Unskewing data
+<br>9. Models: catboost worked the best. 
+
 What I tried that didn't work:
 - models: Lasso, Ridge, KernelRidge, ElasticNet, Random Forest, LightGBM, stacking, xgboost (actually it has a small role in ensembling)
 - some other new features
